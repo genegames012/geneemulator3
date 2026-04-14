@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>GameHub Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🎮 GameHub Pro</h1>
+  <input type="text" id="search" placeholder="Buscar juegos..." onkeyup="filterGames()">
+</header>
+
+<nav>
+  <button onclick="showCategory('all')">Todos</button>
+  <button onclick="showCategory('poki')">Poki</button>
+  <button onclick="showCategory('crazy')">CrazyGames</button>
+</nav>
+
+<section class="grid">
+
+  <div class="card poki" onclick="openGame('https://poki.com')">
+    <h3>🎮 Poki</h3>
+  </div>
+
+  <div class="card crazy" onclick="openGame('https://www.crazygames.com')">
+    <h3>🔥 CrazyGames</h3>
+  </div>
+
+  <div class="card poki" onclick="openGame('https://poki.com/en/g/subway-surfers')">
+    <h3>🏃 Subway Surfers</h3>
+  </div>
+
+  <div class="card crazy" onclick="openGame('https://www.crazygames.com/game/shell-shockers')">
+    <h3>🔫 Shell Shockers</h3>
+  </div>
+
+</section>
+
+<iframe id="screen"></iframe>
+
+<script src="script.js"></script>
+</body>
+</html>
